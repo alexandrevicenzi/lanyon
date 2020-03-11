@@ -1,5 +1,5 @@
 <footer>
   <div class="copyright">
-    &copy; {{ $.Site.Params.copyright }} {{ now.Format "2006"}} · {{ with $.Site.Params.license }}<a href="{{ $.Site.Params.licenseURL }}">{{ . | safeHTML }}</a>{{end}}
+    &copy; {{ $.Site.Params.copyright }} {{ now.Format "2006"}} {{ with $.Site.Params.license }}&middot; <a href="{{ $.Site.Params.licenseURL }}">{{ . | safeHTML }}</a>{{end}}
   </div>
 </footer>
