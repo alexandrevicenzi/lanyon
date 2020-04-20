@@ -8,7 +8,7 @@
       {{ else }}
         {{ with .Site.Params.profilePicture }}
         <div class="author-image">
-          <img src="{{ $.Site.BaseURL }}{{ . }}" class="img-circle img-headshot center" alt="Profile Picture">
+          <img src="{{ relURL . }}" class="img-circle img-headshot center" alt="Profile Picture">
         </div>
         {{ end }}
       {{ end }}

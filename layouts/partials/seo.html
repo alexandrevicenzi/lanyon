@@ -5,7 +5,7 @@
   <meta property="og:image" content="https://www.gravatar.com/avatar/{{md5 .}}?s=400&d=mp">
   {{- else -}}
   {{ with .Site.Params.profilePicture }}
-  <meta property="og:image" content="{{ $.Site.BaseURL }}{{ . }}">
+  <meta property="og:image" content="{{ relURL . }}">
   {{- end -}}
   {{ end }}
 

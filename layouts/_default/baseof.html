@@ -17,21 +17,21 @@
 
   <link type="text/css"
         rel="stylesheet"
-        href="{{ .Site.BaseURL }}css/print.css"
+        href='{{ relURL "css/print.css" }}'
         media="print">
 
   <link type="text/css"
         rel="stylesheet"
-        href="{{ .Site.BaseURL }}css/poole.css">
+        href='{{ relURL "css/poole.css" }}'>
 
   <link type="text/css"
         rel="stylesheet"
-        href="{{ .Site.BaseURL }}css/hyde.css">
+        href='{{ relURL "css/hyde.css" }}'>
 
   {{ partial "theme-color.html" . }}
 
   {{ range $.Site.Params.customCss -}}
-  <link type="text/css" rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+  <link type="text/css" rel="stylesheet" href="{{ relURL . }}">
   {{- end}}
 
   <link rel="stylesheet"
@@ -67,7 +67,7 @@
           crossorigin="anonymous"></script>
 
   {{ range $.Site.Params.customJs -}}
-  <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+  <script src="{{ relURL . }}"></script>
   {{- end}}
 
   {{ template "_internal/google_analytics_async.html" . }}
