@@ -40,7 +40,7 @@
     <section class="social-icons">
       {{ range $item := .Site.Params.socialIcons }}
       <a href="{{ $item.url }}" rel="me" title="{{ $item.title }}" target="_blank">
-        <i class="fab {{ $item.icon }}" aria-hidden="true"></i>
+        <i class="{{ $item.icon }}" aria-hidden="true"></i>
       </a>
       {{ end }}
     </section>

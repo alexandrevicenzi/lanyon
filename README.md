@@ -67,19 +67,24 @@ customJs = ["js/blog.js"]
 
   ## Set as many as you want.
   [[params.socialIcons]]
-  icon = "fa-linkedin"
+  icon = "fab fa-linkedin"
   title = "Linkedin"
   url = "#"
 
   [[params.socialIcons]]
-  icon = "fa-github"
+  icon = "fab fa-github"
   title = "GitHub"
   url = "#"
 
   [[params.socialIcons]]
-  icon = "fa-twitter"
+  icon = "fab fa-twitter"
   title = "Twitter"
   url = "#"
+
+  [[params.socialIcons]]
+  icon = "fas fa-at"
+  title = "Email"
+  url = "mailto:me@example.com"
 
 [menu]
 
