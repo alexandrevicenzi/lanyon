@@ -40,6 +40,7 @@ at the top of the file.
 ```toml
 baseURL = "https://example.com"
 title = "Soho"
+theme = "soho"
 languageCode = "en"
 enableInlineShortcodes = true
 
